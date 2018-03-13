@@ -5,6 +5,7 @@ body {
 }
 
 a {
+  border-bottom: 1px solid transparent;
 	color: #c00;
 	text-decoration: none;
 }
@@ -60,4 +61,36 @@ ul.socials {
 ul.socials li {
 	margin: .5em;
 }
-		
+
+footer {
+  padding: 1rem 1rem 0;
+  background: #c7c8ca;
+}
+
+footer p {
+  margin: 2rem 0 1rem;
+  font-size: .65rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+p.copyright {
+  float: left;
+}
+
+p.message {
+  float: right;
+}
+
+span.heart {
+  color: #c00; 
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
