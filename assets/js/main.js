@@ -1,14 +1,30 @@
 /*
 
-// 
-flip over one card
-// fi
+author:   Jason Spiller
+email:    jason@jasonspiller.com
+date:     3.13.18
+purpose:  Logic for a Memory card matching game.
 
 */
 
-var cardOne = "queen",
-  cardTwo = "king",
-  cardThree = "queen",
-  cardFour = "king";
+var arrCards = ["queen", "king", "queen", "king"],
+  arrCardsInPlay = [];
 
-console.log(cardOne + cardTwo + cardThree + cardFour);
+var strCardOne = arrCards[0],
+  strCardTwo = arrCards[1];
+
+arrCardsInPlay.push(strCardOne);
+arrCardsInPlay.push(strCardTwo);
+
+console.log("User flipped over a " + arrCardsInPlay[0] + " and a " + arrCardsInPlay[1] + ".");
+
+
+if (arrCardsInPlay.length === 2) {
+
+  if (arrCardsInPlay[0] === arrCardsInPlay[1]) {
+    alert("You found a match!");
+  } else {
+    alert("Sorry, try again.");
+  }
+  
+}
